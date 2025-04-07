@@ -17,14 +17,4 @@ public class Topping {
     private double price;
     @Column (name = "calories", nullable = false)
     private double calories;
-
-    public Topping() {
-    }
-
-    public Topping(Long id, String name, double price, double calories) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
-        this.calories = calories;
-    }
 }

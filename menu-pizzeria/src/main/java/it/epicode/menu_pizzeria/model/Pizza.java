@@ -21,16 +21,4 @@ public class Pizza {
     private double price;
     @Column (name = "calories", nullable = false)
     private double calories;
-
-    public Pizza() {
-    }
-
-    public Pizza(Long id, String name, String description, boolean XL, double price, double calories) {
-        this.id = id;
-        this.name = name;
-        this.description = description;
-        this.XL = XL;
-        this.price = price;
-        this.calories = calories;
-    }
 }
