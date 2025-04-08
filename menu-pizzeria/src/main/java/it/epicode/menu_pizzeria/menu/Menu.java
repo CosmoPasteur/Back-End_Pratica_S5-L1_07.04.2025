@@ -23,9 +23,11 @@ public class Menu {
     private List<Topping> toppings = new ArrayList<>();;
 
     public void stampaMenu() {
-        System.out.println("Menu: " + nome);
-        System.out.println("Menu: " + descrizione);
-
+        System.out.println("Menu: " + this.getNome());
+        System.out.println("Descrizione: " + this.getDescrizione());
+        System.out.println("Pizze: " + this.getPizze());
+        System.out.println("Bevande: " + this.getBevande());
+        System.out.println("Toppings: " + this.getToppings());
 
     }
 
