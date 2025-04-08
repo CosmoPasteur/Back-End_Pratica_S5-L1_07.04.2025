@@ -1,5 +1,6 @@
 package it.epicode.menu_pizzeria.pizza;
 
+import it.epicode.menu_pizzeria.menu.RigaMenu;
 import it.epicode.menu_pizzeria.topping.Topping;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,7 +12,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Pizza {
+public class Pizza implements RigaMenu {
 
     private String name;
     private String description;
@@ -21,6 +22,7 @@ public class Pizza {
 
     public String toppingsToString() {
         String toppingsString = toppings.stream().map(Topping::getName).reduce("", (a, b) -> a + ", " + b);
+        return toppingsString;
     }
 
     public double getTotalPrice() {
@@ -37,5 +39,10 @@ public class Pizza {
             totalCalories += topping.getCalories();
         }
         return totalCalories;
+    }
+
+    @Override
+    public String descrizioneRiga() {
+        return name + " - " + description + " - " + getTotalPrice + " € " + getTotalCalories + " kcal";
     }
 }
