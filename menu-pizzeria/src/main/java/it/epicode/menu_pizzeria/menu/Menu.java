@@ -1,14 +1,18 @@
 package it.epicode.menu_pizzeria.menu;
 
-import it.epicode.menu_pizzeria.model.Bevanda;
-import it.epicode.menu_pizzeria.model.Pizza;
-import it.epicode.menu_pizzeria.model.Topping;
+import it.epicode.menu_pizzeria.bevanda.Bevanda;
+import it.epicode.menu_pizzeria.pizza.Pizza;
+import it.epicode.menu_pizzeria.topping.Topping;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
 
-    private List<Pizza> pizza;
-    private List<Bevanda> drinks;
-    private List<Topping> toppings;
+    private String nome;
+    private String descrizione;
+
+    private List<Pizza> pizze = new ArrayList<>();
+    private List<Bevanda> bevande = new ArrayList<>();;
+    private List<Topping> toppings = new ArrayList<>();;
 }
