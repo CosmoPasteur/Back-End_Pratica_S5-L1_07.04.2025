@@ -22,4 +22,11 @@ public class Menu {
     private List<Bevanda> bevande = new ArrayList<>();;
     private List<Topping> toppings = new ArrayList<>();;
 
+    public void stampaMenu() {
+        System.out.println("Menu: " + nome);
+        System.out.println("Menu: " + descrizione);
+
+
+    }
+
 }
