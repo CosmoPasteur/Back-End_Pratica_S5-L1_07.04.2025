@@ -18,19 +18,21 @@ public class MenuConfig {
     private final Topping pomodoro;
 
     private final Pizza margherita;
-    private final Pizza peperoni;
-    private final Pizza funghi;
-    private final Pizza olive;
+    private final Pizza pizzaPeperoni;
+    private final Pizza pizzaFunghi;
+    private final Pizza pizzaOlive;
 
     private final Bevanda cocaCola;
     private final Bevanda sprite;
     private final Bevanda fanta;
 
     public Menu menuPranzo() {
+
         return new Menu("Menu Pranzo",
                 "Pizze e Bevande",
-                List.of(margherita, peperoni, funghi, olive),
+                List.of(margherita, pizzaPeperoni, pizzaFunghi, pizzaOlive),
                 List.of(cocaCola, sprite, fanta),
                 List.of(mozzarella, olive, funghi, peperoni, pomodoro));
 
+    }
 }
